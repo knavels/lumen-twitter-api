@@ -7,7 +7,7 @@ for setting up:
 
 2.rename `.env.example` to `.env`
 
-3.update all mysql sections
+3.update all mysql sections in the `.env` file
 
 4.run `composer install`
 
