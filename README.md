@@ -1,5 +1,5 @@
 # Using Lumen to create some fetch (Scraping) api for twitter
-## This project is only meant to be used as an example of using twitter api and for educational purposes only, This project also done as a task issued by an emplyer as a test
+### This project is only meant to be used as an example of using twitter api and for educational purposes only, this project was also done as a task issued by an emplyer as a test
 
 for setting up:
 
