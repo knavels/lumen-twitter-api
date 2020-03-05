@@ -1,26 +1,24 @@
-`php artisan jwt:secret`
+# Using Lumen to create some fetch (Scraping) api for twitter
+## This project is only meant to be used as an example of using twitter api and for educational purposes only
+## This project also done as a task issued by an emplyer as a test
 
-# Lumen PHP Framework
+for setting up:
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+1.`create a mysql database`
+2.rename `.env.example` to `.env`
+3.update all mysql sections
+4.run `composer install`
+5.run `php artisan migrate`
+6.run `php artisan jwt:secret`
+7.edit also `.env` with your twitter api keys
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+## notes for developers
+all twitter api connection was grabbed from [this file](https://raw.githubusercontent.com/J7mbo/twitter-api-php/master/TwitterAPIExchange.php) with little modifications please use the following links if you want to extend and/or discover other methods and features
 
-## Official Documentation
+1.[main repo](https://github.com/J7mbo/twitter-api-php)
+2.[useful stackoverflow post](https://stackoverflow.com/questions/12916539/simplest-php-example-for-retrieving-user-timeline-with-twitter-api-version-1-1/15314662#15314662)
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
 
-## Contributing
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Regards
+-Navid Dezashibi (Knavels)
