@@ -18,8 +18,20 @@ for setting up:
 7.edit also `.env` with your twitter api keys
 
 
-## notes for developers
+## Notes for developers
 all twitter api connection was grabbed from [this file](https://raw.githubusercontent.com/J7mbo/twitter-api-php/master/TwitterAPIExchange.php) with little modifications please use the following links if you want to extend and/or discover other methods and features
+
+I placed the library in `app\Library\TwitterAPIExchange.php`
+
+also I planned to use only `username` and `password` for auth, all were done in the `app\Http\Controllers\AuthController.php`
+
+you can check out routes in `routes\web.php`
+
+all files are commented also.
+
+
+
+### links
 
 1.[main repo](https://github.com/J7mbo/twitter-api-php)
 
