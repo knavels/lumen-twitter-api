@@ -34,11 +34,11 @@ all files are commented also.
 
 1. login: `POST api/login`, accepts `JSON username, password`
 2. register: `POST api/register` accepts `JSON username, password, password_confirmation`
-3. profile*: `GET api/profile`
-4. users list*: `GET api/users/list`
-5. single user*: `GET api/users/show/{id}`
-6. analyse latest twitter posts: `POST api/twitter/analyse` accepts `JSON search_query` example `{ "search_query" : "programming" }`, this means that you can run this api endpoint with different criteria and in 7 days interval to have updated data for stats
-7. stats*: `POST api/twitter/stats` accepts accepts `JSON tags` example `{ "tags" : "programming|javascript|python" }`
+3. *profile: `GET api/profile`
+4. *users list: `GET api/users/list`
+5. *single user: `GET api/users/show/{id}`
+6. *analyse latest twitter posts: `POST api/twitter/analyse` accepts `JSON search_query` example `{ "search_query" : "programming" }`, this means that you can run this api endpoint with different criteria and in 7 days interval to have updated data for stats
+7. *stats: `POST api/twitter/stats` accepts accepts `JSON tags` example `{ "tags" : "programming|javascript|python" }`
 
 
 ### links I've used for twitter api
