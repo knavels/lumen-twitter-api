@@ -57,5 +57,7 @@ $router->group(['prefix' => 'api'], function () use ($router) {
 
     $router->post('twitter/analyse', 'TwitterController@analyse');
 
+    $router->post('twitter/stats', 'TwitterController@stats');
+
     // END OF PROTECTED ROUTES
 });
