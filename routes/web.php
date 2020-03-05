@@ -11,8 +11,29 @@
 |
 */
 
+use App\Library\TwitterAPIExchange;
+
+
 $router->get('/', function () use ($router) {
     return $router->app->version();
+});
+
+$router->get('/twitter-test', function () use ($router) {
+
+    $settings = array(
+        'oauth_token' => env('TWITTER_ACCESS_TOKEN'),
+        'oauth_token_secret' => env('TWITTER_ACCESS_TOKEN_SECRET'),
+        'consumer_key' => env('TWITTER_CONSUMER_KEY'),
+        'consumer_secret' => env('TWITTER_CONSUMER_SECRET')
+    );
+
+    $url = 'https://api.twitter.com/1.1/search/tweets.json';
+    $getfield = '?q=trump';
+    $requestMethod = 'GET';
+    $twitter = new TwitterAPIExchange($settings);
+    return $twitter->setGetfield($getfield)
+        ->buildOauth($url, $requestMethod)
+        ->performRequest();
 });
 
 // API route group (starts with '/api')

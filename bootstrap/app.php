@@ -96,7 +96,6 @@ $app->register(App\Providers\AuthServiceProvider::class);
 // JWT MIDDLEWARE
 $app->register(\Tymon\JWTAuth\Providers\LumenServiceProvider::class);
 
-
 /*
 |--------------------------------------------------------------------------
 | Load The Application Routes
