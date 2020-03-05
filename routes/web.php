@@ -20,4 +20,14 @@ $router->group(['prefix' => 'api'], function () use ($router) {
     $router->post('register', 'AuthController@register');
 
     $router->post('login', 'AuthController@login');
+
+    // START OF PROTECTED ROUTES
+    // this is just a sample of protected profile route
+    $router->get('profile', 'UserController@profile');
+
+    // examples of simple rest api routing
+    $router->get('users/list', 'UserController@list');
+    $router->get('users/show/{id}', 'UserController@show');
+
+    // END OF PROTECTED ROUTES
 });
